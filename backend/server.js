@@ -15,9 +15,9 @@ connectDB();
 app.use(express.json());
 app.use(bodyParser.json()); //to acess json data
 
-app.get("/", (req, res) => {
-  res.send("API is running sucessfully");
-});
+//app.get("/", (req, res) => {
+// res.send("API is running sucessfully");
+//});
 
 app.use("/api/user", userRoutes);
 app.use("/api/chat", chatRoutes);
